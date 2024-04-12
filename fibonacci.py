@@ -13,12 +13,12 @@ def fibonacci(n):
 if __name__ == "__main__":
     args = sys.argv
     if len(args) != 2:
-        print("the one argument is required", file=sys.stderr)
+        print("expected one argument", file=sys.stderr)
         sys.exit(1)
     try:
         n = int(args[1])
     except ValueError:
-        print("integer number is expected", file=sys.stderr)
+        print("expected an integer number", file=sys.stderr)
         sys.exit(1)
 
     # フィボナッチ数を求める
