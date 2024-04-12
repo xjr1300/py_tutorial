@@ -6,7 +6,7 @@ import numpy as np
 # `matplotlib`パッケージから`pyplot`モジュールを`plt`としてインポート
 import matplotlib.pyplot as plt
 
-# 乱数のシードを設定
+# 乱数を固定するシードを設定
 np.random.seed(0)
 
 # 0から19までの整数を生成
