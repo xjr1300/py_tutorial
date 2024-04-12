@@ -10,5 +10,5 @@ except Exception as e:
 
 print("例外処理終了\n")
 
-
+# 例外処理なし
 f = open("non-existent-file.txt")
