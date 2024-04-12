@@ -6,7 +6,7 @@ d: dict[int, int] = {}
 
 
 def fibonacci(n):
-    global d
+    # dict型はミュータブルであるため、global宣言は不要
     # 辞書に項が格納されていれば、その値を返す
     if n in d:
         return d[n]
