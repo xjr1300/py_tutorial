@@ -26,4 +26,4 @@ if __name__ == "__main__":
     value = fibonacci(n)
     finished = time.time()
     elapsed = finished - started
-    print(f"fibonacci value: {value} ({elapsed:.2f} seconds)")
+    print(f"fibonacci value: {value} ({elapsed:.3f} seconds)")

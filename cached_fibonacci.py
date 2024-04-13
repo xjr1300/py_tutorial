@@ -1,6 +1,6 @@
 import sys
-import time
 import functools
+from datetime import datetime
 
 
 @functools.cache
@@ -24,8 +24,10 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # フィボナッチ数を求める
-    started = time.time()
+    started = datetime.now()
     value = fibonacci(n)
-    finished = time.time()
+    finished = datetime.now()
     elapsed = finished - started
-    print(f"fibonacci value: {value} ({elapsed:.2f} seconds)")
+    # 経過時間をマイクロ秒で取得
+    micro_secs = elapsed.microseconds
+    print(f"fibonacci value: {value} ({micro_secs} micro seconds)")

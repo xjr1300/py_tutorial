@@ -5,7 +5,7 @@ fn main() -> anyhow::Result<()> {
     if args.len() != 2 {
         bail!("expected one argument")
     }
-    let _ = args.next();
+    let _ = args.next(); // 最初の引数はコマンド名のためスキップ
     let n = args
         .next()
         .unwrap()
@@ -17,7 +17,7 @@ fn main() -> anyhow::Result<()> {
     let value = fibonacci(n);
     let elapsed = started.elapsed().unwrap();
     let elapsed = elapsed.as_secs_f32();
-    println!("fibonacci value: {value} ({elapsed:.2} seconds)");
+    println!("fibonacci value: {value} ({elapsed:.3} seconds)");
 
     Ok(())
 }
