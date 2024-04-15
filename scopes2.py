@@ -14,8 +14,7 @@ def foo():
         print(f"UnboundLocalError: {e}", file=sys.stderr)
 
     # 関数内でグローバル変数と同じ名前の変数を宣言
-    # この変数`x`は`foo`関数のローカル変数であり、`foo`関数の終了とともに破棄
-    # される。
+    # この変数`x`は`foo`関数のローカル変数であり、`foo`関数の終了とともに破棄される。
     # また、グローバル変数`x`は、見えなくなる
     x = 300
     print("x is a local variable in foo func:", x)
