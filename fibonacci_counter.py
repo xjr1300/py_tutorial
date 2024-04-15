@@ -5,7 +5,6 @@ arguments: list[int] = []
 
 
 def fibonacci(n):
-    global arguments
     arguments.append(n)
     if n == 0:
         return 0
@@ -32,4 +31,4 @@ if __name__ == "__main__":
     elapsed = finished - started
     print(f"fibonacci value: {value} ({elapsed:.2f} seconds)")
     print(f"number of fibonacci func calls: {len(arguments)}")
-    print(f"arguments: {arguments}")
+    # print(f"arguments: {arguments}")

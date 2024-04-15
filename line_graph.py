@@ -6,13 +6,13 @@ import numpy as np
 # `matplotlib`パッケージから`pyplot`モジュールを`plt`としてインポート
 import matplotlib.pyplot as plt
 
-# 乱数を固定するシードを設定
+# 乱数の生成を固定するシードを設定
 np.random.seed(0)
 
 # 0から19までの整数を生成
 x = [i for i in range(20)]
 # 0から100までの整数を20個生成
-y = [np.random.randint(0, 100) for i in range(20)]
+y = [np.random.randint(0, 100) for _ in range(20)]
 
 # 描画エリアを作成
 _, ax = plt.subplots()

@@ -1,7 +1,8 @@
 def factorial(n: int) -> int:
-    if n == 0:
-        return 1
-    return n * factorial(n - 1)
+    result = 1
+    for m in range(2, n + 1):
+        result *= m
+    return result
 
 
 if __name__ == "__main__":
